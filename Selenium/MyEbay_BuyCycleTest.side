@@ -1,0 +1,282 @@
+{
+  "id": "38b15cd3-4826-403c-8343-3f1a952d7148",
+  "version": "2.0",
+  "name": "MyEbay",
+  "url": "http://localhost:8080/myebay",
+  "tests": [{
+    "id": "c4912c94-d33f-4ae8-bbe4-4a337c2b6644",
+    "name": "Test1",
+    "commands": [{
+      "id": "e48a27d0-5cf9-4219-a749-9533adf3d902",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/myebay/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ab72f04-22a3-465e-9adf-261ff6ce2ab8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "389adbe3-7675-4df5-a511-e2b17b27c494",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cerca tra gli annunci')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f424561-a67d-422f-af08-0bcff4896da8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dettaglio",
+      "targets": [
+        ["linkText=Dettaglio", "linkText"],
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Dettaglio')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/ExecuteVisualizzaAnnuncioServlet?idAnnuncio=4')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dettaglio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5f59c29-71f3-4d79-a129-8c177f0bc308",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Categorie",
+      "targets": [
+        ["linkText=Categorie", "linkText"],
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//a[contains(text(),'Categorie')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#collapseExample')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Categorie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05089192-c2f4-493a-87db-e7c1b74cf044",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Compra",
+      "targets": [
+        ["linkText=Compra", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Compra')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/PrepareLoginByAnnuncioServlet?idAnnuncio=4')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Compra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fa96e9c-bb20-4985-bb3c-50e3dafe2898",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=inputUsername", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c7be169-3dda-4634-aec2-d7170d2fe2d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputUsername",
+      "targets": [
+        ["id=inputUsername", "id"],
+        ["name=inputUsername", "name"],
+        ["css=#inputUsername", "css:finder"],
+        ["xpath=//input[@id='inputUsername']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "cri"
+    }, {
+      "id": "2a5c6365-1e5c-49ef-98c3-936951032913",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=inputPassword", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "4321"
+    }, {
+      "id": "9091a251-032d-4a55-9692-88bc2248b057",
+      "comment": "",
+      "command": "click",
+      "target": "name=idAnnuncio",
+      "targets": [
+        ["name=idAnnuncio", "name"],
+        ["css=.w-100", "css:finder"],
+        ["xpath=//button[@name='idAnnuncio']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accedi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a21267e7-d73c-47f4-89f4-94eefee38a71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Compra",
+      "targets": [
+        ["linkText=Compra", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Compra')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/acquisto/ExecuteCompraAnnuncioServlet?idAnnuncio=4')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Compra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "814688d5-ea69-49e3-b42e-7c0b08ac997c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Effettua una ricarica",
+      "targets": [
+        ["linkText=Effettua una ricarica", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Effettua una ricarica')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/credito/PrepareRicaricaServlet')]", "xpath:href"],
+        ["xpath=//div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Effettua una ricarica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c772fe37-1d09-4ed9-ac01-99a37ae0fcfa",
+      "comment": "",
+      "command": "click",
+      "target": "id=credito",
+      "targets": [
+        ["id=credito", "id"],
+        ["name=credito", "name"],
+        ["css=#credito", "css:finder"],
+        ["xpath=//input[@id='credito']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45c4c046-7ab1-4d49-aec1-c7590f80cb0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=credito",
+      "targets": [
+        ["id=credito", "id"],
+        ["name=credito", "name"],
+        ["css=#credito", "css:finder"],
+        ["xpath=//input[@id='credito']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "6"
+    }, {
+      "id": "650eaf43-0d5a-489a-b1a8-776ec615bdac",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Conferma')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "000a18df-1620-43c6-97cf-aa3f9d18ef03",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1) > .active", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarsExample07']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/myebay')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2186009f-6a7f-4f5d-aa1c-e1a9a4c25593",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cerca tra gli annunci')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfbd5702-1eb0-46ed-9a8e-e91003fb65cc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dettaglio",
+      "targets": [
+        ["linkText=Dettaglio", "linkText"],
+        ["css=tr:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Dettaglio')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/ExecuteVisualizzaAnnuncioServlet?idAnnuncio=4')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dettaglio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3d31090-0a57-402f-81b8-8c2b138e165e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Compra",
+      "targets": [
+        ["linkText=Compra", "linkText"],
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Compra')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/myebay/acquisto/ExecuteCompraAnnuncioServlet?idAnnuncio=4')]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Compra')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc2ed33b-03a8-4a7b-8029-b377e33ff431",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dettaglio",
+      "targets": [
+        ["linkText=Dettaglio", "linkText"],
+        ["css=.btn-sm", "css:finder"],
+        ["xpath=//a[contains(text(),'Dettaglio')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'ExecuteVisualizzaAcquistoServlet?idAcquisto=3')]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dettaglio')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5cfbb985-8a9d-4450-910d-b290468a4f14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
